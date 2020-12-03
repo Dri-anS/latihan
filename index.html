@@ -1,69 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Lightbox</title>
-</head>
-<!--membuat body-->
-<body>
-    <h1>Lightbox Pantai</h1>
-    <div class="container">
-        <!--membuat lightbox-->
-        <ul class="gallery">
-            <li>
-                <a href="#gambar-1">
-                    <img src="img/thumbs/cloud.jpg" alt="Pantai 1">
-                    <span>Pantai Santai</span>
-                </a>
-                <!--membuat overlay  untuk mengklik-->
-                <div class="overlay" id="gambar-1">
-                    <a href="#" class="close">x close</a>
-                    <img src="img/full/cloud.jpg" alt="pantai 1">
-                </div>
-                
-            </li>
-            <li>
-                <a href="#gambar-2">
-                    <img src="img/thumbs/kelapa.jpg" alt="Pantai 2">
-                    <span>Pantai Kelapa</span>
-                </a>
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-                <div class="overlay" id="gambar-2">
-                    <a href="#" class="close">x close</a>
-                    <img src="img/full/kelapa.jpg" alt="pantai 2">
-                </div>
-            
-            </li>
-            <li>
-                <a href="#gambar-3">
-                    <img src="img/thumbs/tropic.jpg" alt="Pantai 3">
-                    <span>Pantai Tropis</span>
-                </a>
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <title>My Portofolio</title>
+    </head>
+  <body class="mt-5">
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Aldriansyah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Akhir Navbar -->
 
-                <div class="overlay" id="gambar-3">
-                    <a href="#" class="close">x close</a>
-                    <img src="img/full/tropic.jpg" alt="pantai 3">
-                </div>
-            </li>
-            <li>
-                <a href="#gambar-4">
-                    <img src="img/thumbs/water.jpg" alt="Pantai 4">
-                    <span>Pantai Batu</span>
-                </a>
 
-                <div class="overlay" id="gambar-4">
-                    <a href="#" class="close">x close</a>
-                    <img src="img/full/water.jpg" alt="pantai 4">
-                </div>
-
-            </li>
-            <div class="clear"></div>
-        </ul>
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <img src="img/pic.png" width="20%" class="rounded-circle img-thumbnail">
+            <h1>Aldriansyah Yustino</h1>
+            <p>Freelance | Web Developer |  Penjual Diamond</p>
+        </div>
+        
     </div>
-    <!--Created By: Aldriansyah Yustino-->
+    <!-- akhir jumbotron -->
 
-</body>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="col  text-center">About</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-xs-5 col-md-5" >
+                    <p>Halo Rian Disini kali ini saya bikin web portfolio untuk menuangkan kegabutan saya. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga repellendus voluptatem placeat incidunt quia, id laborum nemo consequuntur corrupti ullam unde dolorem ducimus quisquam aperiam adipisci nulla dignissimos tenetur velit!</p>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-xs-5 col-md-5">
+                    <p>Saya Jualan Diamond dan Suka Mendesain web dan lagi saya benci Matematika :D. Lorem ipsum dolor sum! Repudiandae tempora quas minus.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Akhir About -->
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="bg-light pb-3">
+    <div class="container">
+        <div class="row mb-4 pt-4">
+            <div class="col text-center">
+                <h1>Portfolio</h1>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md">
+                <div class="card">
+                    <img src="img/barang.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img src="img/barang.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img src="img/barang.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md">
+                <div class="card">
+                    <img src="img/barang.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img src="img/barang.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img src="img/barang.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- akhir portfolio -->
+
+    <!-- contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row pt-4 pb-4">
+                <div class="col text-center">
+                <h2>Contact Me</h2> 
+                </div>
+            </div>
+            <div class="row justify-content-center" >
+                <div class="col-md-4">
+                    <div class="card text-white bg-primary mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Contact Me</h5>
+                            <p class="card-text"><a href="https://web.facebook.com/sipasipasipusapusipukki/" class="btn btn-primary stretched-link">Facebook</a></p>
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><h1>My Office</h1></li>
+                        <li class="list-group-item">Rumah</li>
+                        <li class="list-group-item">Semarang</li>
+                        <li class="list-group-item">Center Java,Indonesia</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <form>
+                        <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Message</label>
+                            <textarea class="form-control" id="pesan" rows="8"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <!-- akhir contact -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col text-center">
+                    <p>&copy;Copyright 2020 By Aldriansyah</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir FOOTER -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
